@@ -1,15 +1,15 @@
 import React from 'react'
 
-function UpdatePost(currentId, postData) {
+function UpdatePost(taskId, postData) {
     var myHeaders = new Headers();
 myHeaders.append("AuthToken", "UrM4YHgb1FcqEf1tuKwmAMMX5MxFZ12a");
 
 var formdata = new FormData();
-formdata.append("message", "yes");
-formdata.append("due_date", "OKA");
-formdata.append("priority", "2");
-formdata.append("assigned_to", "1");
-formdata.append("taskid", currentId);
+formdata.append("message", postData.message);
+formdata.append("due_date", postData.dueDate + " 12:12:12 ");
+formdata.append("priority", postData.priority);
+formdata.append("assigned_to", postData.assignedTo);
+formdata.append("taskid", taskId);
 
 var requestOptions = {
   method: 'POST',

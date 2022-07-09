@@ -1,0 +1,29 @@
+.appBar{
+    border-radius: 15px;
+    margin: 30px;
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.heading
+{
+    color: rgba(0,183,255, 1);
+    text-decoration: none;
+    font-weight:bolder;
+}
+.brandContainer{
+    display: flex;
+    align-items: center;
+}
+/* .toolbar{
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+} */
