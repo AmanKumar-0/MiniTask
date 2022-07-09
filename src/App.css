@@ -1,4 +1,6 @@
 .app__form{
     display: flex;
-    justify-content:space-between;
+    flex-direction: row;
+    margin: auto;
+    max-width:  400px;;
 }
