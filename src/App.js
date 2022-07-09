@@ -13,8 +13,9 @@ function App() {
   const [taskId, setTaskId]= useState(null);
 
   return (
-    <div className="app">
+      <>
       <Nav/>
+    <div className="app">
       <AppContext.Provider
         value={{postData, setPostData,taskId, setTaskId}}>      
       <div className='app__form'>
@@ -24,6 +25,7 @@ function App() {
       <div><Task /></div>
       </AppContext.Provider>
     </div>
+    </>
   );
 }
 
