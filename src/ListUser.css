@@ -1,6 +1,11 @@
+/* @media only screen and (max-width: 450) {
+    .listUser__heading{margin-left: 10px;}
+  } */
+
 .listUser{
     background-color: whitesmoke;
     border-radius: 10px;
+    /* max-width: 450px; */
 }
 .listUser__heading {
     /* align-items: center;

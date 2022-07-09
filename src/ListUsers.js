@@ -41,7 +41,7 @@ function ListUsers() {
     {users.map(users =>(
         <div className='listUser__names'>
           
-         <h1 > {users.id} {users.name}  </h1>
+         <h1>{users.id}:{users.name}</h1>
         </div>    
 ))}
 </div>
