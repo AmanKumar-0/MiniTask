@@ -41,7 +41,6 @@ const clear=()=>{
                 type="text" id="message" name="message" 
                 placeholder='Message'
                  value={postData.message}
-                // onChange={(e)=> setPostData({...postData, message: e.target.value})
                 onChange={(e)=> updateValue(e)}>
             </input>
               
@@ -49,7 +48,6 @@ const clear=()=>{
           <input 
                 type="date" id="dueDate" name="dueDate" placeholder='Due Date'
                 value={postData.dueDate} 
-                // onChange={(e)=> setPostData({...postData, dueDate: e.target.value})}>
                 onChange={(e)=> updateValue(e) }>
           </input>
           

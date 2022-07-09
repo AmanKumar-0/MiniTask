@@ -22,7 +22,6 @@ function ListUsers() {
     
           const searchRes = await fetch(URL, requestOptions);
           const searchData = await searchRes.json();
-          console.log(searchData.users);
           setUsers(searchData.users)  
         } catch (error) {
           console.log(error);

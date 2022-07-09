@@ -9,7 +9,6 @@ function Task() {
  
   const [tasks, setTasks]= useState([]);
   const {postData, setPostData, setTaskId} = useContext(AppContext);
-  // const[taskId, setTaskId] = useState([]);
 
 
  var myHeaders = new Headers();
@@ -28,7 +27,6 @@ function Task() {
  
        const searchRes = await fetch("https://devza.com/tests/tasks/list", requestOptions);
        const searchData = await searchRes.json();
-       console.log(searchData.tasks,"Fetched Data");
        searchData.tasks.sort((a,b)=> a.due_date>b.due_date ? 1:-1 && a.priority<b.priority ? 1:-1);
        setTasks(searchData.tasks);  
      } catch (error) {

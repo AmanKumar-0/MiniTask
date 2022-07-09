@@ -8,11 +8,7 @@ function Nav() {
       <div className='heading'>
         Mini Task Manager
         </div>
-
       </div>
-      {/* <div className='toolbar'>
-        Aman
-      </div> */}
     </div>
   )
 }

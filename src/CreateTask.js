@@ -9,7 +9,6 @@ myHeaders.append("AuthToken", "UrM4YHgb1FcqEf1tuKwmAMMX5MxFZ12a");
 
 var formdata = new FormData();
 formdata.append("message", (postData.message));
-// formdata.append("created_on",postData.dueDate);
 formdata.append('due_date', postData.dueDate + " 12:12:12" );
 formdata.append("priority", postData.priority);
 formdata.append("assigned_to", postData.assignedTo);
